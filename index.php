@@ -1,5 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start(); 
+include ('php/koneksi.php');
+?>
+
+<!DOCTYPE php>
+<php lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +23,14 @@
                     <div class="logo"><a href="">Petshop Kecik</a></div>
                     <div class="menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="product.html">Product</a></li>
-                            <li><a href="pemesanan.html" class="tbl-biru">Order</a></li>
-            
-
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="product.php">Product</a></li>
+                            <li><a href="pemesanan.php" class="tbl-biru">Order</a></li>
+                            <li><a href="login.php" class="tbl-biru">Login Admin</a></li>
                         </ul>
                     </div>
-            </nav>
+                </div>
+            </nav>            
             <div class="wrapper">
                 <section id="home">
                     <img src="src/10494126.jpg" alt="home" width="50%" height="50%">
@@ -45,7 +50,7 @@
                 Dari makanan berkualitas, aksesoris lucu, hingga perawatan lengkap—semuanya tersedia dengan harga terjangkau dan kualitas terbaik.
                 Yuk, beri yang terbaik untuk teman berbulu Anda!
                 Pesan sekarang dan nikmati promo spesial!</p>
-                <p> <a href="product.html" class="tbl-pink">Lihat Lebih Lanjut.</a></p>
+                <p> <a href="product.php" class="tbl-pink">Lihat Lebih Lanjut.</a></p>
                 
                 
                 </div>

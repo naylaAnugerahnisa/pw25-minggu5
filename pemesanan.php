@@ -1,3 +1,9 @@
+<?php
+session_start(); 
+include ('php/koneksi.php');
+?>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -102,7 +108,7 @@
 
     <div class="form-container">
         <h2>Form Pemesanan Produk</h2>
-        <form id="formPemesanan">
+        <form id="formPemesanan" action="php/simpan_pesanan.php" method="POST">
             <label for="nama">Nama:</label>
             <input type="text" name="nama" id="nama" placeholder="Masukkan nama Anda">
 
@@ -137,7 +143,7 @@
                 <button type="reset" class="reset-button">Batal</button>
             </div>
 
-            <a href="index.html" class="back-link">Kembali ke Halaman Utama</a>
+            <a href="index.php" class="back-link">Kembali ke Halaman Utama</a>
         </form>
         <script src="validasipemesanan.js"></script>
 
